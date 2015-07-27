@@ -15,32 +15,46 @@
 
 /* content */
 #content .row .col-md-3{border:1px solid yellow; height:200px;}
-#text-1{text-align: center; line-height: 42px; font-size: 18px; margin-top: 35px; margin-bottom: 35px;}
-#section-1 .caption{font-size: 18px; text-align: center;margin: 15px 0;}
-#section-1 .description{font-size:12px; line-height: 16px; text-align: center; margin:25px 0;}
+#text-1{text-align: center; line-height: 42px; font-size: 26px; margin-top: 35px; margin-bottom: 35px;}
 
+.vertical-image-text .thumbnail{width:160px; height:160px; background-repeat:no-repeat; background-position: center center; margin-left:auto; margin-right:auto;box-shadow: none;border:none;}
+.vertical-image-text .caption{font-size: 18px; text-align: center; margin: 15px 0;}
+.vertical-image-text .description{line-height: 24px; text-align: center;}
+
+#learn-at-lti .thumbnail {background-image: url(../img/learn-at-lti.png); }
+#explore-our-work .thumbnail {background-image: url(../img/explore-our-work.png); }
+#collaborate-with-us .thumbnail {background-image: url(../img/collaborate-with-us.png); }
 
 .side-by-side-image-text{margin: 10px 0; }
-.side-by-side-image{height:150px;}
+.side-by-side-image{min-height:300px;background-repeat:no-repeat; background-position: center center;}
+#roni-photo{background-image: url(../img/roni-photo.png);}
+#google-logo{background-image: url(../img/google-logo.png);}
 
 .side-by-side-text .page-header{padding-bottom: 0; margin-top: 10px;}
 .side-by-side-text .divider-highlight{width:50px; border-bottom: 1px red solid;}
+
 .hightlight{color:red; font-size: 16px;}
 
-
-.image-divider{margin-top:25px;background-repeat: no-repeat; background-size:cover;}
+.image-divider{margin-top:45px;background-repeat: no-repeat; background-size:cover;}
 .image-divider h5{ text-transform: uppercase;}
-.image-divider > .text-on-image{color:#fff; text-align: center; padding-top:60px; padding-bottom:60px;}
+.image-divider > .text-on-image{color:#feffff; text-align: center; padding-top:60px; padding-bottom:60px;}
 
-#section-1 .image-divider{background-image: url(../img/Divider_01_R1a.png);}
-#section-2 .image-divider{background-image: url(../img/Divider_02_R1a.png);}
+#section-1 .image-divider{background-image: url(../img/Divider_01_R1a.png);margin-bottom:25px;}
+#section-2 .image-divider{background-image: url(../img/Divider_02_R1a.png);margin-bottom:25px;}
 #section-3 .image-divider{background-image: url(../img/Divider_03_R1a.png);}
 
-
+#news p{color:#8c8c8c;}
 .event-item {display: block; margin: 10px 0; position: relative;}
 .event-item .date{position: absolute; text-transform: uppercase; color:red; margin-right:15px; font-size: 22px; padding: 15px 15px 5px 0px; border-bottom: 1px red solid;}
 .event-item .event-detail{padding-left: 110px}
+.event-item .event-detail p {color:#8c8c8c;}
+
+.sub-title{font-size:18px;margin:15px 0;}
 
 /* footer */
-#footer .row{padding-top:35px; padding-bottom: 35px; background-color: #333; color: #fff;}
+#footer .row{padding-top:35px; padding-bottom: 35px; background-color: #272727; color: #fff;}
 #footer a{color: #fff;}
+#footer-logo{background-repeat:no-repeat; background-position: center center;background-image: url(../img/LTI-logo.png);min-height:112px; }
+.social-icon{padding:23px;background-repeat:no-repeat; background-position: center center;}
+#twitter{background-image: url(../img/twitter-icon.png);}
+#fb{background-image: url(../img/fb-icon.png);}
