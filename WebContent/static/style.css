@@ -3,6 +3,7 @@
 body{padding-top: 100px;}
 .btn{margin-top:25px; margin-bottom: 25px; border: none; border-radius: 0px; padding: 4px 25px;text-transform: uppercase; }
 .btn-default{color:#fff; background-image: none; background-color: transparent;border:1px solid #CCC;}
+.btn-danger{background-color:#af1329;}
 
 /* header */
 #header {background: #fff url(../img/header-background.png) top left repeat-x;}
@@ -78,9 +79,9 @@ body{padding-top: 100px;}
 #google-logo{background-image: url(../img/google-logo.png);}
 
 .side-by-side-text .page-header{padding-bottom: 0; margin-top: 10px;}
-.side-by-side-text .divider-highlight{width:50px; border-bottom: 1px red solid;}
+.side-by-side-text .divider-highlight{width:50px; border-bottom: 1px #af1329 solid;}
 
-.hightlight{color:red; font-size: 16px;}
+.hightlight{color:#af1329; font-size: 16px;}
 
 .image-divider{margin-top:45px;background-repeat: no-repeat; background-size:cover;}
 .image-divider h5{ text-transform: uppercase;}
@@ -92,7 +93,7 @@ body{padding-top: 100px;}
 
 #news p{color:#8c8c8c;}
 .event-item {display: block; margin: 10px 0; position: relative;}
-.event-item .date{position: absolute; text-transform: uppercase; color:red; margin-right:15px; font-size: 22px; padding: 15px 15px 5px 0px; border-bottom: 1px red solid;}
+.event-item .date{position: absolute; text-transform: uppercase; color:#af1329; margin-right:15px; font-size: 22px; padding: 15px 15px 5px 0px; border-bottom: 1px #af1329 solid;}
 .event-item .event-detail{padding-left: 110px}
 .event-item .event-detail p {color:#8c8c8c;}
 
@@ -102,6 +103,7 @@ body{padding-top: 100px;}
 #footer .row{padding-top:35px; padding-bottom: 35px; background-color: #272727; color: #fff;}
 #footer a{color: #fff;}
 #footer-logo{background-repeat:no-repeat; background-position: center center;background-image: url(../img/LTI-logo.png);min-height:112px; }
+#social-icons{text-align:center;}
 .social-icon{padding:23px;background-repeat:no-repeat; background-position: center center;}
 #twitter{background-image: url(../img/twitter-icon.png);}
 #fb{background-image: url(../img/fb-icon.png);}

@@ -1,0 +1,15 @@
+Task 2: The second request if for you to submit a PHP code sample along with a narrative of the task you were trying to solve, describe your approach(es) to solving, both successful or failed, and anything you might do differently.
+
+This is a custome module we build in Drupal 7. In this application, a faculty can choose to use one of the following source for his public profile:
+- local inforamtion (DBMI Website)
+- Information from DigitalVita (external system)
+
+Code in the import-publications.page.php page is trying to do:
+For those who choose to use local information, 
+- delete publication and grant information imported from DV;
+- publish publication and grant information on local website (publication and grant are two Drupal content types in the application).
+For those who choose to use DV information:
+- import publication and grant information from DV;
+- unpublish publication and grant information on local website.
+
+This function is set to run with cron job once every night. 
