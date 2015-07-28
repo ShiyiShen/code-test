@@ -1,22 +1,30 @@
-@CHARSET "ISO-8859-1";
+@CHARSET "UTF-8";
 
 /* Large devices Desktops (≥1200px) */
 @media only screen and (min-width: 1200px){
 	.image-divider > .text-on-image{line-height: 40px;font-size: 22px;}
+	#text-1{line-height: 40px; font-size: 22px;}
 }
 
 /* Medium devices Desktops (≥992px)  */
 @media only screen and (min-width: 992px)  and (max-width: 1199px){
-	.image-divider > .text-on-image{line-height: 40px;font-size: 22px;}	
+	.image-divider > .text-on-image{line-height: 40px;font-size: 22px;}
+	#text-1{line-height: 40px; font-size: 22px;}
 }
 
 /* Small devices Tablets (≥768px) */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
 	.image-divider > .text-on-image{line-height: 35px;font-size: 20px;}	
+	#text-1{line-height: 35px; font-size: 20px;}
 }
 
 
 /* 	Extra small devices Phones (<768px)  */
 @media only screen and (max-width: 767px){
-	.image-divider > .text-on-image{line-height: 35px;font-size: 20px;}		
+	.image-divider > .text-on-image{line-height: 35px;font-size: 20px;}
+	#text-1{line-height: 35px; font-size: 20px;}
+	#header ul#main-menu,
+	#header ul#secondary-menu{display: none;}
+	#header .navbar-toggle{display: block; z-index: 999;}
+	#header {background-image: none;}
 }
