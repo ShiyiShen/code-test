@@ -11,8 +11,7 @@ body{padding-top: 100px;}
 #header ul#secondary-menu .btn-danger{margin-top: 0;margin-bottom: 0;}
 #header ul#main-menu > li > span {cursor: pointer;}
 
-
-/* main meanu*/
+/* main menu*/
 @media all and (min-width: 992px){
 	#header ul#main-menu,
 	#header ul#secondary-menu {clear:both; float:right !important;list-style-type:none;}
@@ -27,7 +26,6 @@ body{padding-top: 100px;}
 	#header ul#main-menu > li > a {padding:25px 15px; text-transform: uppercase;color: #333;}	
 	#header ul#main-menu > li > a:hover{color: #8c8c8c; text-decoration: none;}
 }
-
 
 @media all and (max-width: 991px) {	
  	#header {background-image: none;}
@@ -53,6 +51,14 @@ body{padding-top: 100px;}
 	#header ul#secondary-menu > li > a:hover{color: #8c8c8c;background-color:#fff; text-decoration: none;}
  }
  
+ 
+ /* slider */
+#front-page-slide-owl .item{position:relative;}
+#front-page-slide-owl .info-content{position: absolute; bottom:-1000px; left: 150px; opacity: 0}
+#front-page-slide-owl .slider-sub-caption{color:#fff;text-transform: uppercase; fonr-size:12px; margin:10px 0;}
+#front-page-slide-owl .slider-caption{color:#fff; font-size: 40px; font-weight:bold; margin-top:10px;}
+#front-page-slide-owl .slider-details{color:#fff; font-size:12px; line-height:25px;}
+
  
 /* content */
 #content .row .col-md-3{border:1px solid yellow; height:200px;}
