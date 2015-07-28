@@ -23,8 +23,8 @@
 @media only screen and (max-width: 767px){
 	.image-divider > .text-on-image{line-height: 35px;font-size: 20px;}
 	#text-1{line-height: 35px; font-size: 20px;}
-	#header ul#main-menu,
-	#header ul#secondary-menu{display: none;}
-	#header .navbar-toggle{display: block; z-index: 999;}
-	#header {background-image: none;}
+
 }
+
+
+
