@@ -1,15 +1,34 @@
 Task 2: The second request if for you to submit a PHP code sample along with a narrative of the task you were trying to solve, describe your approach(es) to solving, both successful or failed, and anything you might do differently.
 
-This is a custome module we build in Drupal 7. In this application, a faculty can choose to use one of the following source for his public profile:
-- local inforamtion (DBMI Website)
-- Information from DigitalVita (external system)
+This is one of the functions I built in a custom Drupal 7 module. In this application, we want to allow faculties to use one of the following information for his public profile on DBMI website:
 
-Code in the import-publications.page.php page is trying to do:
+- Local information on DBMI website
+- Information from Digital Vita (external system)
+
+Code in the import-publications.page.php file is doing the following:
+
 For those who choose to use local information, 
-- delete publication and grant information imported from DV;
-- publish publication and grant information on local website (publication and grant are two Drupal content types in the application).
+- Delete publication and grant information imported from DV;
+- Publish publication and grant information on local website (publication and grant are two Drupal content types in this application).
 For those who choose to use DV information:
-- import publication and grant information from DV;
-- unpublish publication and grant information on local website.
+- Import/update/delete publication and grant information from DV;
+- Unpublish publication and grant information on local website.
 
-This function is set to run with cron job once every night. 
+This function is set to run with cron job every couple hours.
+
+There are several things I considered when building this function:
+
+- Provide a place/option that allows faculties to choose using local information or DV information. This is a "where" question.
+- Supporting switching in both ways: "from local to DV" or "from DV to local"
+- Shall we store DV information in local database or shall we just display them through web service call?
+- Since publication and grant are content types in local, we use views for display. If not storing DV information in local, how to display them together with information in local in a view and well sorted (by publication date, title, authors). 
+- The advantages of storing DV information in local database are: users can use default Drupal search function to find these contents; DV information can be imported as Drupal content types, so displaying both them with local information in views would be easy and straightforward.
+- Then the question comes to: how can we keep the imported DV information in sync with changes on DV, and when to trigger the sync function?
+- The function in import-publications.page.php file runs with Drupal cron job every couple hours, thus DBMI website would get any changes in DV. 
+- When users switch from local to DV, we don’t want to delete all the local information, in case they want to switch from DV back to local later. So my solution is unpublishing local information insteading of deleting them.
+- When importing DV information, we need to check if the information was added, updated or deleted in DV, we need to make changes to information in local accordingly. 
+
+Room for improvement:
+- It would be good if DBMI website gets “notification” when information is changed on DV. So we can keep information on DBMI website in sync with DV all the time. But we don’t have control over functions available on DV.
+- I think this is the best solution I can think of based on the constraints of Drupal and external system. 
+
